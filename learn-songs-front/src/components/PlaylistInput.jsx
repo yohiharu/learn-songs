@@ -48,7 +48,7 @@ export default function PlaylistInput({ onLoad, loading, error }) {
             </span>
           </div>
 
-          {error && <div className="error-box">{error}</div>}
+          {error && <div className="error-box">プレイリストの読み込みに失敗しました。IDまたはURLを確認してください。</div>}
 
           <button
             type="submit"
