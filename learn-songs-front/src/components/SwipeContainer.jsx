@@ -165,7 +165,7 @@ export default function SwipeContainer({ songs, progress, onProgress, onReset, o
           ←
         </button>
         <div className="session-counter">
-          {currentIndex} / {deck.length}
+          {currentIndex + 1} / {deck.length}
         </div>
         <button className="btn-icon" onClick={() => setShowStats(true)} title="進捗">
           📊
