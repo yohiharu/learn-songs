@@ -1,0 +1,17 @@
+# CGIスクリプトの実行を有効化
+Options +ExecCGI
+AddHandler cgi-script .py
+
+# __pycache__ を生成しない
+SetEnv PYTHONDONTWRITEBYTECODE 1
+
+# .env ファイルへの直接アクセスを完全禁止
+<Files ".env">
+    Require all denied
+</Files>
+
+# .htaccess 自体へのアクセスも禁止
+<Files ".htaccess">
+    Require all denied
+</Files>
+
