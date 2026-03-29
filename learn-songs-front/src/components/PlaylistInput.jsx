@@ -46,6 +46,9 @@ export default function PlaylistInput({ onLoad, loading, error }) {
             <span className="field-hint">
               プレイリストIDまたはYouTubeのURLをそのまま貼り付けてください
             </span>
+            <span className="field-hint">
+              ※ 非公開プレイリストは使用できません
+            </span>
           </div>
 
           {error && <div className="error-box">{error}</div>}
