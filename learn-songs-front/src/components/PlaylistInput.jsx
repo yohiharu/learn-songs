@@ -34,17 +34,17 @@ export default function PlaylistInput({ onLoad, loading, error }) {
 
         <form onSubmit={handleSubmit} className="setup-form">
           <div className="field">
-            <label>プレイリスト ID</label>
+            <label>YouTubeプレイリストのURLまたはID</label>
             <input
               type="text"
               value={playlistId}
               onChange={(e) => setPlaylistId(e.target.value)}
-              placeholder="PLxxxxxxxxxxxxxxxxxxxxxxxx または https://www.youtube.com/playlist?list=..."
+              placeholder="https://www.youtube.com/playlist?list=... または PLxxxxxxxxxxxxxxxxxxxxxxxx"
               autoComplete="off"
               spellCheck={false}
             />
             <span className="field-hint">
-              プレイリストIDまたはYouTubeのURLをそのまま貼り付けてください
+              YouTubeのプレイリストのURLまたはプレイリストIDをそのまま貼り付けてください
             </span>
             <span className="field-hint">
               ※ 非公開プレイリストは使用できません
