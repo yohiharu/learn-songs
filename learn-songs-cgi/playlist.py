@@ -117,9 +117,10 @@ def main():
     except urllib.error.HTTPError as e:
         try:
             err_data = json.loads(e.read().decode('utf-8'))
+            msg = err_data.get('error', {}).get('message', str(e))
         except Exception:
-            err_data = {'message': str(e)}
-        send_response(e.code, {'error': err_data})
+            msg = str(e)
+        send_response(e.code, {'error': msg})
 
     except Exception as e:
         send_response(500, {'error': str(e)})
