@@ -1,6 +1,10 @@
 # learn-songs
 
 YouTubeプレイリストの曲をスワイプで覚えるWebアプリです。
+Claude Codeで作りました。バグには注意してください
+
+## デモURL
+https://app.yohiharu.com
 
 ## 構成
 
